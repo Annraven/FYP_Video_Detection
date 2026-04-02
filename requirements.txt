@@ -1,0 +1,6 @@
+opencv-python
+imagehash
+pillow
+numpy
+openai-whisper
+scikit-learn
