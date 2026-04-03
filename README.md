@@ -1,26 +1,20 @@
-# 🎬 VideoDup AI: 多模态视频重复度检测系统
+# VideoDup AI: Multi-modal Video Duplicate Detection System 🎬
 
-这是一个为毕业设计（FYP）开发的自动化视频原创度检测工具。系统通过集成多种 AI 技术，实现从视觉、听觉、文本三个维度对视频进行“洗稿”识别。
+## 📝 Project Overview
+This is a Final Year Project (FYP) developed to detect video plagiarism using a multi-modal approach. 
+The system analyzes videos across three dimensions:
+- **Visual**: Perceptual Hashing (pHash)
+- **Textual**: Speech-to-Text using OpenAI Whisper (Tiny model)
+- **Audio**: MFCC feature extraction & Cosine Similarity
 
----
+## ✨ Key Features
+- **Modern UI**: Built with Streamlit for a sleek user experience.
+- **Batch Processing**: Compare a base video against multiple samples at once.
+- **Adjustable Weights**: Customizable sensitivity for Visual, Text, and Audio components.
 
-## 🌟 核心功能
-*   **多维度检测**：结合 pHash 图像算法、OpenAI Whisper 语音转文字、MFCC 音频特征。
-*   **交互式 UI**：基于 Streamlit 构建，支持视频预览、实时进度条及风险可视化。
-*   **自定义权重**：用户可根据视频类型（如纯混剪、解说类）灵活调整各维度的判定比例。
-*   **批量处理**：支持一次性对比整个样本库，自动生成风险排序报告。
-
-## 📊 技术架构
-本系统主要采用了以下技术栈：
-1. **视觉 (Visual)**: `ImageHash` (感知哈希算法)
-2. **文本 (Text)**: `OpenAI Whisper` (语音识别) + `TF-IDF` (文本相似度)
-3. **音频 (Audio)**: `Librosa` (音频指纹提取) + `Cosine Similarity` (余弦相似度)
-
-## 🛠️ 环境部署
-### 1. 前置要求
-*   Python 3.8+
-*   **FFmpeg**: 必须安装并配置到系统环境变量中（用于处理视频流）。
-
-### 2. 安装依赖
-```bash
-pip install -r requirements.txt
+## 🚀 How to Run
+1. Install FFmpeg and add it to your System PATH.
+2. Clone this repository.
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
